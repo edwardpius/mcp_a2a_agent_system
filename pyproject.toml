@@ -13,3 +13,11 @@ dependencies = [
     "mcp[cli]>=1.13.1",
     "streamlit>=1.49.1",
 ]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["utilities*"]

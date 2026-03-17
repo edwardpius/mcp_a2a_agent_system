@@ -4,7 +4,7 @@ from utilities.mcp import mcp_discovery
 from a2a.client import A2ACardResolver
 import httpx
 import asyncio
-from config import config
+from utilities.config import config
 
     
 async def retrieve_host_card(host_agent_url: str) -> agent_connector.AgentConnector:

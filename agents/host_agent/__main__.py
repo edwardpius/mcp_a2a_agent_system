@@ -7,7 +7,7 @@ from a2a.server.apps import A2AStarletteApplication
 import uvicorn
 import asyncio
 import asyncclick as click
-from config import config
+from utilities.config import config
 
 @click.command()
 @click.option('--host', default='localhost', help='Host for the agent server.')

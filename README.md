@@ -29,3 +29,7 @@
 
 - add more agents and mcp server
 - wrap them in containers
+
+## References
+
+- [Building a Demo Multi-Agent System with A2A Agents and an MCP Server](https://medium.com/@claudia.yao2012/building-a-demo-multi-agent-system-with-a2a-agents-and-an-mcp-server-5ee1ba59a23a)

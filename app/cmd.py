@@ -4,7 +4,7 @@ from utilities.a2a import agent_connector
 from a2a.client import A2ACardResolver
 import httpx
 import asyncio
-from config import config
+from utilities.config import config
 
 
 @click.command()

@@ -3,7 +3,7 @@ import os
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, Field
-from config import config
+from utilities.config import config
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(format="[%(levelname)s]: %(message)s", level=logging.INFO)

@@ -5,7 +5,7 @@ from a2a.server.tasks import InMemoryTaskStore
 from agents.post_design_agent.agent_executor import PostDesignAgentExecutor
 from a2a.server.apps import A2AStarletteApplication
 import uvicorn
-from config import config
+from utilities.config import config
 
 
 @click.command()

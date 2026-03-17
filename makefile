@@ -1,11 +1,11 @@
-run-all:
+run-all: stop-all
 	uv run python3 -m mcp_server.math_mcp_server & echo $$! > math_server.pid
 	sleep 3
 	uv run python3 -m agents.post_design_agent & echo $$! > post_design_agent.pid
 	sleep 3
 	uv run python3 -m agents.host_agent & echo $$! > host_agent.pid
 	sleep 3
-	streamlit run app/chat_ai.py & echo $$! > chat_ui.pid
+	uv run streamlit run app/chat_ai.py & echo $$! > chat_ui.pid
 
 stop-all:
 	-kill $$(cat math_server.pid) || true
